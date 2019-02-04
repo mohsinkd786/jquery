@@ -38,3 +38,15 @@ input[type=submit]:hover{
 #error-message{
     color: red;
 }
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    font-style: italic;
+    color: lightgrey;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    font-style: italic;
+    color: lightgrey;
+}
