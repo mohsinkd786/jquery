@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Hello | Jquery</title>
+        <script type='text/javascript' src='jquery3.js'></script>
+    <!--jquery syntax-->
+    <script type="text/javascript">
+        $(document).ready(()=>{
+            console.log('Hello jQuery');
+            // call button click event
+            $('#click-me').click(()=>{
+                console.log('Button was clicked');
+                // set value
+                $('#message').val('Hello world');
+            });
+            $('#set-content').click(()=>{
+                console.log('Setting content for the page');
+                //$('#content').text('<b>Oh! finally,Jquery has eased my load</b>');
+                $('#content').html('<b>Oh! finally,Jquery has eased my load</b>');
+            });
+        });
+
+        //jQuery(document).ready();
+    </script>
+    </head>
+    <header>
+        <h2>Hello, welcome to jquery</h2>
+    </header>
+    <body>
+        <div>
+            <input type="text" id='message'>
+            <input type="button" value="Click me!" id='click-me'>
+            <input type="button" value='Set content' id='set-content'/>
+        </div>
+        <div id='content'>
+
+        </div>
+    </body>
+</html>
