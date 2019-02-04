@@ -33,14 +33,14 @@
         // Fade In / Out
         $('#fade-in').click(()=>{
             $('#fade-out').fadeIn(1000);
-            //$('#fade-in').fadeOut();
+            $('#fade-in').fadeOut(1000);
 
             $('#fade-content').fadeIn(1000,()=>{
                 console.log('Content is Visible');
             });
         });
         $('#fade-out').click(()=>{
-            //$('#fade-in').fadeIn(1000);
+            $('#fade-in').fadeIn();
             $('#fade-out').fadeOut();
             $('#fade-content').fadeOut();
         });
