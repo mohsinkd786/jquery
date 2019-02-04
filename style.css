@@ -16,7 +16,7 @@ input{
 .input{
     border: 1px solid #584848;
     border-radius: 8px;
-    margin: 12 0 18 12px;
+    margin: 8 0 10 12px;
     height: 5em;
     width: 25em;
     -webkit-box-shadow: inset -22px -19px 61px -5px rgba(158, 158, 160, 0.51);
@@ -24,16 +24,22 @@ input{
     box-shadow: inset -22px -19px 61px -5px rgba(158, 158, 160, 0.51);
 }
 input[type=submit]{
-    width: 25em;
+    width: 5.5em;
     cursor: pointer;
     background: url('button.png');
-    color: white;
+    color: #8a6b6b;
     border-radius: 10px;
     margin-left: 11px;
     height: 30px;
+    font-size: 1em;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
 }
 input[type=submit]:hover{
     background-color: ghostwhite;
+}
+.btn-submit{
+    padding-left: 188px;
 }
 .input-error{
     border-color: red;
