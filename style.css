@@ -3,12 +3,19 @@ body{
 }
 #login-form-content{
     background-color: rgb(245,245,220,0.3);
-    width: 30%;
+    width: 340px;
     border: 1px solid rgb(169,169,211);
     border-radius: 2px;
     padding: 5 5 5 5px;
     margin: auto;
     margin-top:100px;
+}
+fieldset{
+    border-color: #CCCCCC;
+    border-radius: 5px;
+}
+legend{
+    color: #CCCCCC;
 }
 input{
     display: block;
