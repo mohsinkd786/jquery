@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Toggle | Js</title>
+    </head>
+    <script type="text/javascript" src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+    <script type="text/javascript">  
+    $(document).ready(()=>{
+        $('#on').click(()=>{
+            $('#off').show();
+            $('#on').hide();
+
+            $('#content').show();
+        });
+        $('#off').click(()=>{
+            $('#off').hide();
+            $('#on').show();
+
+            $('#content').hide();
+        });
+        // time based
+        $('#on-time').click(()=>{
+            $('#off-time').show();
+            $('#on-time').hide();
+
+            $('#content-time').show(1000);
+        });
+        $('#off-time').click(()=>{
+            $('#off-time').hide();
+            $('#on-time').show();
+
+            $('#content-time').hide(1000);
+        });
+        // Fade In / Out
+        $('#fade-in').click(()=>{
+            $('#fade-out').fadeIn(1000);
+            //$('#fade-in').fadeOut();
+
+            $('#fade-content').fadeIn(1000,()=>{
+                console.log('Content is Visible');
+            });
+        });
+        $('#fade-out').click(()=>{
+            //$('#fade-in').fadeIn(1000);
+            $('#fade-out').fadeOut();
+            $('#fade-content').fadeOut();
+        });
+        // Slide Toggle
+        $('#slide-toggle').click(()=>{
+            $('#toggle-content').slideToggle(1000);
+        });
+    });
+    </script>
+    <body>
+        <fieldset>
+            <legend> Show / Hide</legend>
+        <input type="button" id='on' value='On'/>
+        <input type="button" id='off' value='Off' style="display: none"/>
+        
+        <div style='display:none' id='content'>
+            I can see you now
+        </div>
+    </fieldset>
+    <fieldset>
+            <legend> Show / Hide - Time based</legend>
+        <input type="button" id='on-time' value='On'/>
+        <input type="button" id='off-time' value='Off' style="display: none"/>
+        
+        <div style='display:none' id='content-time'>
+            I can see you now
+        </div>
+    </fieldset>
+    <fieldset>
+            <legend> Fade In / Out</legend>
+        <input type="button" id='fade-in' value='Fade In'/>
+        <input type="button" id='fade-out' value='Fade Out' style="display: none"/>
+        
+        <div style='display:none' id='fade-content'>
+            I can see you now
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend> Toggle</legend>
+        <input type="button" id='slide-toggle' value='Toggle'/>
+        
+        
+        <div style='display:none' id='toggle-content'>
+            I can see you now <br/>
+            Toggle seems quite interesting <br/>
+            It's more popular 
+        </div>
+    </fieldset>
+    </body>
+</html>
