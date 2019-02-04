@@ -19,6 +19,9 @@ input{
     margin: 12 0 18 12px;
     height: 5em;
     width: 25em;
+    -webkit-box-shadow: inset -22px -19px 61px -5px rgba(158, 158, 160, 0.51);
+    -moz-box-shadow: inset -22px -19px 61px -5px rgba(158, 158, 160, 0.51);
+    box-shadow: inset -22px -19px 61px -5px rgba(158, 158, 160, 0.51);
 }
 input[type=submit]{
     width: 25em;
