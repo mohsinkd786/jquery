@@ -1,0 +1,30 @@
+#login-form-content{
+    background-color: rgb(245,245,220,0.3);
+    width: 30%;
+    border: 1px solid rgb(169,169,211);
+    border-radius: 2px;
+    padding: 5 5 5 5px;
+}
+input{
+    display: block;
+}
+.input{
+    border: 1px solid darkgray;
+    border-radius: 2px;
+    margin: 5 2 5 2px;
+    height: 4em;
+    width: 15em;
+}
+input[type=submit]{
+    width: 26em;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background-color: ghostwhite;
+}
+.input-error{
+    border-color: red;
+}
+#error-message{
+    color: red;
+}
