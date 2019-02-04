@@ -1,23 +1,33 @@
+body{
+    background-color: #dfdfe21c;
+}
 #login-form-content{
     background-color: rgb(245,245,220,0.3);
     width: 30%;
     border: 1px solid rgb(169,169,211);
     border-radius: 2px;
     padding: 5 5 5 5px;
+    margin: auto;
+    margin-top:100px;
 }
 input{
     display: block;
 }
 .input{
-    border: 1px solid darkgray;
-    border-radius: 2px;
-    margin: 5 2 5 2px;
-    height: 4em;
-    width: 15em;
+    border: 1px solid #584848;
+    border-radius: 8px;
+    margin: 12 0 18 12px;
+    height: 5em;
+    width: 25em;
 }
 input[type=submit]{
-    width: 26em;
+    width: 25em;
     cursor: pointer;
+    background: url('button.png');
+    color: white;
+    border-radius: 10px;
+    margin-left: 11px;
+    height: 30px;
 }
 input[type=submit]:hover{
     background-color: ghostwhite;
