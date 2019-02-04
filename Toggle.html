@@ -46,7 +46,20 @@
         });
         // Slide Toggle
         $('#slide-toggle').click(()=>{
-            $('#toggle-content').slideToggle(1000);
+            $('#toggle-content').slideToggle('slow');
+        });
+        // animate
+        $('#animate').click(()=>{
+            $('#animate-content').animate({
+                fontSize: '24px',
+                opacity: 0.5
+            },1500);
+        });
+        $('#animate-off').click(()=>{
+            $('#animate-content').animate({
+                fontSize: "14px",
+                opacity: 1
+            },1000);
         });
     });
     </script>
@@ -87,6 +100,15 @@
             I can see you now <br/>
             Toggle seems quite interesting <br/>
             It's more popular 
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Animate</legend>
+        <input id='animate' type='button' value='Animate'/>
+        <input id='animate-off' type='button' value='Revert'/>
+        
+        <div id='animate-content'>
+            Hello We are just trying to play around with animations
         </div>
     </fieldset>
     </body>
