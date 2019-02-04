@@ -21,4 +21,25 @@ $(document).ready(()=>{
             $('#error-message').text('Password cannot be left blank');
         }
     });
+
+    // using class
+    $('.btn-submit').click(()=>{
+        console.log('class based');
+    });
+
+    // using element / tag
+    $('div').mouseover(()=>{
+       // console.log('Traversed div');
+    });
+
+    $(':text').mouseout(()=>{
+        // console.log('Mouse out Div');
+        $(':text').css({'background-color':'white'});
+    });
+    // for all the text boxes
+    // trigger once 
+    $(':text').one('mouseover',()=>{
+        $(':text').css({'background-color':'#66e8dc'});
+    });
+
 });
