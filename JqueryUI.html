@@ -44,6 +44,8 @@
                             <input type="checkbox" name='interests' value="reading">Reading
                             <input type="checkbox" name='interests' value="sleeping">Sleeping
                     </div>
+                    <div><input type="text" name='dob' id='dob' placeholder="Your DOB" /></div>
+                    
                     <div><input type="email" name='email' id='email' placeholder="Your Email" /></div>
                     <div><input type="text" id='city' placeholder="Your City"/></div>
                     <div><input type="submit" value='Sign up'id='sbt-signup'/></div>
@@ -79,10 +81,51 @@
                 </div>
             </fieldset>
         </div>
+        <div id='dialog-box' title="Message">
+            <p>
+                Welcome to Jquery UI
+            </p>
+        </div>
+        <div id='draggable-box'>
+            <fieldset>
+                <h3 class='ui-widget-header'>Resize</h3>
+                <p>
+                    This is a draggable box 
+                </p>
+            </fieldset>
+        </div>
+        <div id='resizable-box'>
+            <fieldset>
+                <p>
+                    This is a Resizable box 
+                </p>
+            </fieldset>
+        </div>
+        <div id='progress-bar'>
+        </div>
+        <div id='slider'>
+        </div>
+        <ul id="sortable">
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
+        </ul>
     </body>
    </html>
 <style>
 #menu{
     width: 30%;
+}
+#draggable-box,#resizable-box,#slider{
+    width: 30%;
+}
+#progress-bar{
+    width: 100px;
+    height: 20px;
+    background-color: lightgreen;
 }
 </style>
