@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Validate | Jquery</title>
+        <script type='text/javascript' src='jquery3.js'></script>
+        <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js'></script>
+        <script type='text/javascript' src='validate.js'></script>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Registration</legend>
+            <form id='frm-registration'>
+                <input type='text' id='name' name='name' placeholder="Your name ..." />
+                <input type='email' id='email' name='email' placeholder="Your Email ..."/>
+                <input type='number' id='phone' name='phone' placeholder="Your Phone ...."/>
+                <input type="submit" name='sbt-register' value='Register' id='sbt-register'/>
+            </form>
+        </fieldset>
+    </body>
+</html>
+<style>
+input{
+    display: block;
+    margin: 10 0 10 10px;
+    width: 20em;
+    height: 5em;
+    border-radius: 4px; 
+}
+input[type=submit]{
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background-color: darkgrey;
+}
+
+</style>
